@@ -3,3 +3,26 @@
     margin: 0;
     text-decoration: none;
 }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.nav-item {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+}
+
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+    background-color: #264653;
+
+    grid-column: 1 / 2;
+    min-height: 100dvh;
+}
