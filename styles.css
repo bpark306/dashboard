@@ -2,27 +2,47 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-
+img {
+    fill: white;
+}
 body {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 7fr;
 }
 
+.nav-cluster {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 .nav-item {
     display: grid;
     grid-template-columns: 3fr 8fr;
 }
 
+.nav-item > img {
+    width: 18px;
+}
+
+img {
+    place-self: center;
+}
 
 #sidebar {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 32px;
     
 
     background-color: #264653;
 
     grid-column: 1 / 2;
     min-height: 100dvh;
+}
+
+a {
+    font-family: "Roboto";
+    color: white;
 }
