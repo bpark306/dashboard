@@ -15,17 +15,20 @@ body {
 .nav-cluster {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
 }
-.nav-item {
+.nav-item, .dashboard-item {
     display: grid;
     grid-template-columns: 3fr 8fr;
+    margin: 8px;
 }
 
 .nav-item > img {
     width: 18px;
 }
-
+.nav-item > p {
+    font-weight: bold;
+}
 img {
     place-self: center;
 }
@@ -42,7 +45,16 @@ img {
     min-height: 100dvh;
 }
 
-a {
-    font-family: "Roboto";
+p {
     color: white;
+}
+
+#dashboard-text {
+    font-size: 1.25rem;
+    place-self: center left;
+
+}
+
+#dashboard-icon {
+    width: 36px;
 }
