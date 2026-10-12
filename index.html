@@ -8,7 +8,32 @@
 </head>
 <body>
     <div id="header">
+        <search>
+            <form action="/search-page" method="get">
+                <label id="search-label" for="site-search">
+                    <img id="search-icon" src="icons/search.svg">
+                </label>   
+                <input type="search" id="site-search">
+            </form>
+        </search>
+        <div id="account-info">
+            <img id="notification-icon" src="icons/notifications.svg">
+            <img id="account-pfp" class="pfp" src="pfp.jpg">
+            <p id="name">Brian Park</p>
+        </div>
 
+        <div id="profile-cluster">
+            <img class="pfp" src="pfp.jpg">
+            <div>
+                <p id="greeting">Hi there,</p>
+                <p id="name-username">Brian Park (@bruuan)</p> 
+            </div>
+        </div>
+        <div id="button-cluster">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </div>
     <div id="sidebar">
         <div class="dashboard-item">
